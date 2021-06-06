@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="/normalize.css" rel="stylesheet">
+    <style>
+        header {
+            text-align: center;
+            background: url('https://i.imgur.com/rwFNRKwb.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        a {
+            color: black;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        img {
+            margin: 40px 0px 0px 0px;
+            border: 3px solid cyan;
+            border-radius: 20px;
+        }
+
+        ul {
+            padding: 40px;
+            background: cyan;
+            border-bottom: solid black 2px;
+        }
+
+        li {
+            display: inline;
+            padding: 0px 10px 0px 10px;
+            font-size: 20px;
+        }
+
+        .blog {
+            background-color: rgba(63, 233, 255, 0.493);
+            margin-top: -15px;
+        }
+
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+            border-bottom: solid black 2px;
+        }
+
+        #btn {
+            background-color: cyan;
+            border: solid cyan 2px;
+            border-radius: 25px;
+            padding: 10px 25px;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+                padding: 5px;
+            }
+
+            li {
+                padding: 5px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://i.imgur.com/yrsmtT3s.jpg" title="source: imgur.com" />
+        <h1>Adventures of Moon Baby</h1>
+        <ul>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <main class="blog">
+        <article>
+            <h2>Blog One</h2>
+
+            <p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag
+                brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them
+                polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
+            <div class="blogfooter">
+                <button id="btn">Like</button>
+                <span id="tag">#pluto</span>
+                <span id="tag">#life-forms</span>
+            </div>
+        </article>
+        <article>
+            <h2>Blog Two</h2>
+            <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic
+                selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx
+                irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
+            <button id="btn">Like</button>
+        </article>
+        <article>
+            <h2>Blog Three</h2>
+            <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee,
+                bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch.
+                Forage YOLO polaroid</p>
+            <button id="btn">Like</button>
+        </article>
+    </main>
+    <script>
+        $("button").on("click", function () {
+            alert("Clicked!");
+        });
+    </script>
+</body>
